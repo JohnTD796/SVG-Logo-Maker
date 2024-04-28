@@ -1,8 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateSVG = require('./lib/generateSVG')
-const Shapes = require('./lib/shapes')
-const fileName = 'logo.svg'
+const fileName = './examples/Newlogo.svg'
 
 const questions = [
     {
