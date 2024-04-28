@@ -1,6 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateSVG = require('./lib/generateSVG')
+const Shapes = require('./lib/shapes')
 const fileName = 'logo.svg'
 
 const questions = [
@@ -40,7 +41,7 @@ function init(){
     .prompt(questions)
 
     .then((data) => {
-        let generatedData = generateSVG(data)
+        let generatedData = JSON.stringify(generateSVG(data))
         writeToFile(fileName, generatedData);
     });
 }
