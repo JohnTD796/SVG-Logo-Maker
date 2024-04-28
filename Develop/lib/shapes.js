@@ -18,9 +18,6 @@ class Circle extends Shapes {
 }
 
 class Triangle extends Shapes {
-    constructor(shapeColor, textColor, logoText){
-        super(shapeColor, textColor, logoText)
-    }
     render(){
         return `<polygon points='110,10 200,190 20,190' fill='${this.shapeColor}'></polygon>
                 <text x='158' y='160' font-size='60' text-anchor='end' fill='${this.textColor}'>${this.logoText}</text>`
@@ -28,13 +25,10 @@ class Triangle extends Shapes {
 }
 
 class Square extends Shapes {
-    constructor(shapeColor, textColor, logoText){
-        super(shapeColor, textColor, logoText)
-    }
     render(){
         return `<rect width='150' height='150' x='10' y='10' fill='${this.shapeColor}' />
                 <text x='135' y='110' font-size='60' text-anchor='end' fill='${this.textColor}'>${this.logoText}</text>`
     }
 }
 
-module.exports = {Shapes, Circle, Triangle, Square};
+module.exports = {Circle, Triangle, Square};
