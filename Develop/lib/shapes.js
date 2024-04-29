@@ -3,7 +3,6 @@ class Shapes {
         this.shapeColor = shapeColor,
         this.textColor = textColor,
         this.logoText = logoText
-        console.log(this.logoText)
     }
     render() {
         return ''
