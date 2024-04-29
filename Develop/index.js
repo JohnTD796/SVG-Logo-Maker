@@ -43,7 +43,7 @@ function init(){
 
     .then((data) => {
         let generatedData = JSON.stringify(generateSVG(data))
-        writeToFile(fileName, generatedData);
+        writeToFile(fileName, JSON.parse(generatedData));
     });
 }
 
